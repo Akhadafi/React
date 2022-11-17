@@ -1,14 +1,19 @@
-import { useState } from 'react'
-import HolloComponent from './components/HolloComponent'
-import StateFullComponent from './container/StateFullComponent'
+import { useState } from "react";
+import Youtube from "./components/Youtube";
 
 function App() {
   return (
     <div className="App">
-      <HolloComponent/>
-      <StateFullComponent/>
+      <Youtube
+        durasi="11.01"
+        judul="Programing Menyenangkan"
+        kategori="programing"
+      />
+      <Youtube durasi="11.01" judul="Coding Wkwk" kategori="coding" />
+      <Youtube durasi="11.01" judul="Jalan-Jalan" kategori="jalan" />
+      <Youtube />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
