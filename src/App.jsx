@@ -1,19 +1,12 @@
-import { useState } from "react";
+import React from "react";
 import Youtube from "./components/Youtube";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Youtube
-        durasi="11.01"
-        judul="Programing Menyenangkan"
-        kategori="programing"
-      />
-      <Youtube durasi="11.01" judul="Coding Wkwk" kategori="coding" />
-      <Youtube durasi="11.01" judul="Jalan-Jalan" kategori="jalan" />
+    <div>
       <Youtube />
     </div>
   );
-}
+};
 
 export default App;
