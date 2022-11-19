@@ -1,12 +1,14 @@
 import React from "react";
-import Youtube from "./components/Youtube";
+import Navbar from "./components/Navbar";
+import Router from "./components/Router";
 
-const App = () => {
+export default function App() {
   return (
-    <div>
-      <Youtube />
-    </div>
+    <>
+      <Navbar />
+      <main className="min-h-screen pt-8">
+        <Router />
+      </main>
+    </>
   );
-};
-
-export default App;
+}
